@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="keywords"
+      content="HTML5,CSS3,HTML,Template,multi-page,Labto - Laboratory & Research HTML Template"
+    />
+    <meta
+      name="description"
+      content="Labto - Laboratory & Research HTML Template"
+    />
+    <meta name="author" content="Barat Hadian" />
+
+    <!-- Bootstrap Min CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- Animate Min CSS -->
+    <link rel="stylesheet" href="animate.min.css" />
+    <!-- FontAwesome Min CSS -->
+    <link rel="stylesheet" href="fontawesome.min.css" />
+    <!-- Flaticon CSS -->
+    <link rel="stylesheet" href="flaticon.css" />
+    <!-- Magnific Popup Min CSS -->
+    <link rel="stylesheet" href="magnific-popup.min.css" />
+    <!-- niceSelect CSS -->
+    <link rel="stylesheet" href="nice-select.css" />
+    <!-- Odometer Min CSS -->
+    <link rel="stylesheet" href="odometer.min.css" />
+    <!-- MeanMenu CSS -->
+    <link rel="stylesheet" href="meanmenu.css" />
+    <!-- Owl Carousel Min CSS -->
+    <link rel="stylesheet" href="owl.carousel.min.css" />
+    <!-- Progressbar Min CSS -->
+    <link rel="stylesheet" media="all" href="progressbar.min.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" media="all" href="style" />
+    <!-- RTL CSS -->
+    <link rel="stylesheet" media="all" href="rtl.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" media="all" href="responsive.css" />
+
+    <title>سامانه یکپارچه جواب دهی آزمایشگاه</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+
+  <body>
+    <style>
+      @@media print {
+        header,
+        .page-title-area,
+        footer,
+        .section-title {
+          display: none !important;
+        }
+
+        .labheader {
+          border-bottom: 1px solid #6d4f93;
+          padding-bottom: 40px;
+          background: #d3d3d3;
+          border-radius: 46px;
+          padding: 14px 20px;
+        }
+
+        .labresult {
+          margin-top: 25px;
+          padding: 0px 35px;
+        }
+
+        .ptb-60 {
+          padding-top: 0;
+        }
+
+        .team-details-desc {
+          text-align: right;
+          border: 1px solid #d3d3d3;
+        }
+      }
+    </style>
+    <!-- Start Preloader Area -->
+    <div class="preloader">
+      <h2 class="loader">در حال بارگذاری...</h2>
+    </div>
+    <!-- End Preloader Area -->
+    <!-- Start Navbar Area -->
+    <div class="navbar-area">
+      <div class="labto-mobile-nav">
+        <div class="logo">
+          <a href="index.html"><img src="logo.png" alt="logo" /></a>
+        </div>
+      </div>
+
+      <div class="labto-nav">
+        <div class="container">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html"
+              ><img src="logo.png" alt="logo"
+            /></a>
+
+            <div
+              class="collapse navbar-collapse mean-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">صفحهdddddd اصلی</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">اطلاعات نسخه</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">راهنمایی</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link">تماس با ما</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Area -->
+    <!-- Start Page Title Area -->
+    <div class="page-title-area">
+      <div class="container">
+        <div class="page-title-content">
+          <h2></h2>
+
+          <ul>
+            <li><a href="#">اطلاعات هویتی</a></li>
+            <li>اطلاعات آزمایش</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Page Title Area -->
+    <!-- Start FAQ Area -->
+    <section class="faq-area ptb-60">
+      <div class="container">
+        <div class="col-lg-12 col-md-12">
+          <div class="section-title">
+            <span>اطلاعات آزمایش</span>
+
+            <div class="printlab">
+              <a
+                class="btn btn-info"
+                href="javascript:if(window.print)window.print()"
+                ><i class="fa fa-print" aria-hidden="true"></i> پرینت آزمایش</a
+              >
+            </div>
+          </div>
+          <div id="printContentID" class="team-details-desc labetail">
+            <div class="labheader">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="team-info">
+                    <li>
+                      <p>
+                        <span>شماره پذیرش</span>
+                        @Model.ReceptionNumber
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>نام مراجعه کننده</span>
+                        @Model.FirstName
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>پزشک معالج</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <div class="team-info">
+                    <h2></h2>
+
+                    <h3></h3>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <ul class="team-info">
+                    <li>
+                      <p>
+                        <span>ش.ص</span>
+                        : 1
+
+                        <span style="padding-right: 30px">ش.ج</span>
+                        : 2
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>سن</span>
+                        @Model.Age
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <span>تاریخ پذیرش</span>
+                        @Model.ReceptionDate
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div dir="ltr" class="labresult">
+              <form>
+                <div class="cart-table table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">result</th>
+                        <th scope="col">reference range</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      @{ for (int i = 0; i < Model.LabResultDetail.Count; i++) {
+                      TempData["root"] = Model.LabResultDetail[i].Root;
+                      TempData["semroot"] = Model.LabResultDetail[i].SemRoot; if
+                      (i == 0) {
+                      <tr>
+                        <td style="font-size: 20px" class="product-thumbnail">
+                          <span class="unit-amount"
+                            >@Model.LabResultDetail[i].Root</span
+                          >
+                        </td>
+                        <td>
+                          <span class="unit-amount"></span>
+                        </td>
+                        <td>
+                          <span class="unit-amount"></span>
+                        </td>
+                      </tr>
+
+                      if
+                      (!string.IsNullOrEmpty(@Model.LabResultDetail[i].SemRoot))
+                      {
+                      <tr>
+                        <td style="font-size: 20px">
+                          @Model.LabResultDetail[i].SemRoot
+                        </td>
+                        <td>
+                          <span class="unit-amount"></span>
+                        </td>
+                        <td>
+                          <span class="unit-amount"></span>
+                        </td>
+                      </tr>
+                      } } if (i != 0) { TempData["rootbef"] =
+                      Model.LabResultDetail[i - 1].Root; if
+                      (TempData["root"].ToString() !=
+                      TempData["rootbef"].ToString()) {
+                      <tr>
+                        <td style="font-size: 20px; font-weight: bold">
+                          @Model.LabResultDetail[i].Root
+                        </td>
+                        <td>
+                          <span class="unit-amount"></span>
+                        </td>
+                        <td>
+                          <span class="unit-amount"></span>
+                        </td>
+                      </tr>
+                      } TempData["semrootbef"] = Model.LabResultDetail[i -
+                      1].SemRoot; if (TempData["semroot"].ToString() !=
+                      TempData["semrootbef"].ToString()) {
+                      <tr>
+                        <td style="font-size: 20px">
+                          @Model.LabResultDetail[i].SemRoot
+                        </td>
+                        <td>
+                          <span class="unit-amount"></span>
+                        </td>
+                        <td>
+                          <span class="unit-amount"></span>
+                        </td>
+                      </tr>
+                      } }
+                      <tr>
+                        <td class="product-thumbnail">
+                          <span class="unit-amount"
+                            >@Model.LabResultDetail[i].Name</span
+                          >
+                        </td>
+
+                        <td class="product-name">
+                          <span class="unit-amount"
+                            >@Model.LabResultDetail[i].Result</span
+                          >
+                        </td>
+
+                        <td class="product-price">
+                          <span class="unit-amount"
+                            >@Model.LabResultDetail[i].ReferenceValue</span
+                          >
+                        </td>
+                      </tr>
+                      if
+                      (!string.IsNullOrEmpty(Model.LabResultDetail[i].Sensitive))
+                      {
+                      <tr>
+                        <td
+                          colspan="3"
+                          style="text-align: left"
+                          class="product-price"
+                        >
+                          <span class="unit-amount"
+                            >Sensitive :
+                            @Model.LabResultDetail[i].Sensitive</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          colspan="3"
+                          style="text-align: left"
+                          class="product-price"
+                        >
+                          <span class="unit-amount"
+                            >Intermediate :
+                            @Model.LabResultDetail[i].intermediate</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          colspan="3"
+                          style="text-align: left"
+                          class="product-price"
+                        >
+                          <span class="unit-amount"
+                            >Resistant :
+                            @Model.LabResultDetail[i].Resistant</span
+                          >
+                        </td>
+                      </tr>
+                      } } }
+                    </tbody>
+                  </table>
+                </div>
+              </form>
+            </div>
+            <div class="labfooter">
+              <div class="row">
+                <div class="col-md-4">
+                  <ul class="team-info">
+                    <li>
+                      <p>
+                        <span>Lab Director:</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="team-info" style="margin-top: 0px">
+                    <li>
+                      <p>
+                        <span>توضیحات : </span>
+                        L=Low ، H=high ، *=Rechecked
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="team-info">
+                    <li>
+                      <p>شرکت داده اندیش روزنه</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start FAQ Area -->
+    <!-- Start Footer Area -->
+    <footer class="footer-area bg-fffcfb">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="single-footer-widget">
+              <div class="logo">
+                <a href="#"><img src="logo.png" alt="logo" /></a>
+
+                <p>
+                  لورم ایپسوم به سادگی ساختار چاپ و متن را در بر می گیرد. لورم
+                  ایپسوم به مدت 40 سال استاندارد صنعت بوده است. لورم ایپسوم به
+                  سادگی ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم به مدت 40
+                  سال استاندارد صنعت بوده است.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="single-footer-widget pl-5 ml-3">
+              <ul class="useful-links-list">
+                <li><a href="#">صفحه اصلی</a></li>
+                <li><a href="#">اطلاعات نسخه</a></li>
+                <li><a href="#">راهنمایی</a></li>
+                <li><a href="#">آموزش</a></li>
+                <li><a href="#">تماس با ما</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright-area">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <p>
+                © تمامی حقوق وب سایت محفوظ و متعلق به شرکت داده اندیش روزنه می
+                باشد.
+              </p>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <ul>
+                <li>
+                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Area -->
+
+    <div class="go-top"><i class="fas fa-arrow-up"></i></div>
+    <script>
+      var css = '<link rel="stylesheet" href="/css/print.css" />';
+      var printContent = document.getElementById("printContentID");
+
+      var WinPrint = window.open("", "", "width=900,height=650");
+      WinPrint.document.write(printContent.innerHTML);
+      WinPrint.document.head.innerHTML = css;
+      WinPrint.document.close();
+      WinPrint.focus();
+      WinPrint.print();
+      WinPrint.close();
+    </script>
+    <!-- jQuery Min JS -->
+    <script src="jquery.min.js"></script>
+    <!-- Popper Min JS -->
+    <script src="popper.min.js"></script>
+    <!-- Bootstrap Min JS -->
+    <script src="bootstrap.min.js"></script>
+    <!-- MeanMenu JS -->
+    <!-- Magnific Popup Min JS -->
+    <!-- Main JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
